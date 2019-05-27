@@ -17,8 +17,8 @@
       "url": "https://simonsobservatory.org/"
     },
     "logos": {
-      "small": "img/simpleJson_logo.svg",
-      "large": "img/simpleJson_logo.svg"
+      "small": "img/sisockJson_logo.svg",
+      "large": "img/sisockJson_logo.svg"
     },
     "links": [
       {"name": "GitHub", "url": "https://github.com/simonsobs/sisock-json-datasource"},

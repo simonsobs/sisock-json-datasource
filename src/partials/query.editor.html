@@ -5,19 +5,99 @@
     </div>
 
     <div class="gf-form" ng-if="ctrl.target.rawQuery">
-      <textarea class="gf-form-input" rows="5" ng-model="ctrl.target.target" spellcheck="false" ng-blur="ctrl.onChangeInternal()" />
+      <textarea class="gf-form-input" rows="5" ng-model="ctrl.target.target" spellcheck="false" ng-blur="ctrl.onChangeInternal(-1)" />
     </div>
 
     <div ng-if="!ctrl.target.rawQuery">
       <div class="gf-form">
+        <div ng-if="ctrl.casc_level > 0">
+          <gf-form-dropdown model="ctrl.casc_data0"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(0)"
+            on-change="ctrl.onChangeInternal(0)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 1">
+          <gf-form-dropdown model="ctrl.casc_data1"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(1)"
+            on-change="ctrl.onChangeInternal(1)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 2">
+          <gf-form-dropdown model="ctrl.casc_data2"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(2)"
+            on-change="ctrl.onChangeInternal(2)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 3">
+          <gf-form-dropdown model="ctrl.casc_data3"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(3)"
+            on-change="ctrl.onChangeInternal(3)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 4">
+          <gf-form-dropdown model="ctrl.casc_data4"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(4)"
+            on-change="ctrl.onChangeInternal(4)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 5">
+          <gf-form-dropdown model="ctrl.casc_data5"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(5)"
+            on-change="ctrl.onChangeInternal(5)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 6">
+          <gf-form-dropdown model="ctrl.casc_data6"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(6)"
+            on-change="ctrl.onChangeInternal(6)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 7">
+          <gf-form-dropdown model="ctrl.casc_data7"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(7)"
+            on-change="ctrl.onChangeInternal(7)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 8">
+          <gf-form-dropdown model="ctrl.casc_data8"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(8)"
+            on-change="ctrl.onChangeInternal(8)">
+          </gf-form-dropdown>
+        </div>
+        <div ng-if="ctrl.casc_level > 9">
+          <gf-form-dropdown model="ctrl.casc_data9"
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getCascOptions(9)"
+            on-change="ctrl.onChangeInternal(9)">
+          </gf-form-dropdown>
+        </div>
         <gf-form-dropdown model="ctrl.target.target"
-          allow-custom="true"
-          lookup-text="true"
-          get-options="ctrl.getOptions($query)"
-          on-change="ctrl.onChangeInternal()">
-      </gf-form-dropdown>
+            allow-custom="true"
+            lookup-text="true"
+            get-options="ctrl.getOptions($query)"
+            on-change="ctrl.onChangeInternal(-1)">
+        </gf-form-dropdown>
       </div>
-    </div>
+      </div>
     <div class="gf-form gf-form--grow">
       <div class="gf-form-label gf-form-label--grow"></div>
     </div>

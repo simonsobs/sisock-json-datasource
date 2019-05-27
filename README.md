@@ -1,3 +1,37 @@
+## Sisock JSON Datasource
+
+This datasource plugin has been forked from the [Simple JSON
+Datasource](https://github.com/grafana/simple-json-datasource),
+minimally modified for use in the
+[Sisock](https://github.com/simonsobs/sisock) system for the Simons
+Observatory.
+
+At this time the only changes are in the branding and in the query
+editor, which expands field names in a series of cascading dropdowns
+based on splitting the field name on the . character.
+
+To install the "compiled" plugin, copy the dist/ folder to the grafana
+plugins folder, which is often found at /var/lib/grafana/plugins/:
+```
+cp -r dist /var/lib/grafana/plugins/sisock-json-datasource/
+```
+
+You probably need to restart grafana to have it see the plugin:
+```
+sudo systemctl restart grafana.service
+```
+
+To compile the plugin, after editing src, run:
+```
+npm run build
+```
+
+That npm command assumes you've initialized the npm build environment
+as described below.
+
+**Below this point**, the original README for the SimpleJSONDatasource
+is reproduced.
+
 ## Simple JSON Datasource - a generic backend datasource
 
 More documentation about datasource plugins can be found in the [Docs](https://github.com/grafana/grafana/blob/master/docs/sources/plugins/developing/datasources.md).

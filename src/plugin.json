@@ -1,31 +1,31 @@
 {
-  "name": "SimpleJson",
-  "id": "grafana-simple-json-datasource",
+  "name": "SisockJson",
+  "id": "sisock-json-datasource",
   "type": "datasource",
 
   "partials": {
-    "config": "public/app/plugins/datasource/simplejson/partials/config.html"
+    "config": "public/app/plugins/datasource/sisockjson/partials/config.html"
   },
 
   "metrics": true,
   "annotations": true,
 
   "info": {
-    "description": "simple json datasource",
+    "description": "sisock json datasource",
     "author": {
-      "name": "Grafana Labs",
-      "url": "https://grafana.com"
+      "name": "Simons Observatory",
+      "url": "https://simonsobservatory.org/"
     },
     "logos": {
       "small": "img/simpleJson_logo.svg",
       "large": "img/simpleJson_logo.svg"
     },
     "links": [
-      {"name": "GitHub", "url": "https://github.com/grafana/simple-json-datasource"},
-      {"name": "MIT License", "url": "https://github.com/grafana/simple-json-datasource/blob/master/LICENSE"}
+      {"name": "GitHub", "url": "https://github.com/simonsobs/sisock-json-datasource"},
+      {"name": "MIT License", "url": "https://github.com/simsonsobs/sisock-json-datasource/blob/master/LICENSE"}
     ],
-    "version": "1.4.0",
-    "updated": "2018-06-20"
+    "version": "0.1.0",
+    "updated": "2019-05-27"
   },
 
   "dependencies": {
